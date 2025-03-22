@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بازی محله</title>
+    <link rel="stylesheet" href="neighborhood.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div class="game-container">
+        <div class="controls">
+            <div class="character-select">
+                <h3>انتخاب کاراکتر:</h3>
+                <div class="characters">
+                    <div class="character" data-color="#ff4444">کاراکتر قرمز</div>
+                    <div class="character" data-color="#44ff44">کاراکتر سبز</div>
+                    <div class="character" data-color="#4444ff">کاراکتر آبی</div>
+                </div>
+            </div>
+            <div class="instructions">
+                <h3>راهنمایی:</h3>
+                <p>از کلیدهای جهت‌دار برای حرکت استفاده کنید</p>
+            </div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+    </div>
+    <script src="neighborhood.js"></script>
+</body>
+</html> 

@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Vazir', Arial, sans-serif;
+}
+
+body {
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    direction: rtl;
+}
+
+.game-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 20px;
+}
+
+.controls {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    min-width: 200px;
+}
+
+.character-select h3, .instructions h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.characters {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.character {
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.character:hover {
+    transform: scale(1.05);
+}
+
+.character[data-color="#ff4444"] {
+    background: #ff4444;
+    color: white;
+}
+
+.character[data-color="#44ff44"] {
+    background: #44ff44;
+    color: white;
+}
+
+.character[data-color="#4444ff"] {
+    background: #4444ff;
+    color: white;
+}
+
+.instructions p {
+    color: #666;
+    font-size: 14px;
+}
+
+#gameCanvas {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+} 
